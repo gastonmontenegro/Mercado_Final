@@ -38,6 +38,7 @@ function cargarProductos() {
 }
 
 let comprar = () => {
+  document.getElementById("compras").innerHTML = "";
   let valorTotal = 0;
   for (let i = 0; i < stock.length; i++) {
     let selectorCantidad = document.getElementById(`amountSelect${i}`);
